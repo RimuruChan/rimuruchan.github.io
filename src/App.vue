@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">蜡烛计算</router-link>
+    <router-link to="/">蜡烛计算工具</router-link>
   </nav>
   <router-view/>
 </template>
