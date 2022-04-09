@@ -1108,9 +1108,11 @@ export default class BpCalc extends Vue {
       return -1;
     }
     let tokenStart = 0;
-    let tokenEnd = this.bpData[this.levelEnd - 1].tokenNum;
+    let tokenEnd = 0;
     if (this.levelStart != 0)
       tokenStart = this.bpData[this.levelStart - 1].tokenNum;
+    if (this.levelEnd != 0)
+      tokenEnd = this.bpData[this.levelEnd - 1].tokenNum;
     return tokenEnd - tokenStart;
   }
 
