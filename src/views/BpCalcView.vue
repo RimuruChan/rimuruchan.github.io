@@ -16,11 +16,11 @@
         <el-row gutter="16" justify="center">
           <el-col :span="8">
             <span>蜡烛单位数量</span>
-            <el-input v-model="bpNum" placeholder="起始等级"/>
+            <el-input v-model="bpNum" placeholder="蜡烛单位数量"/>
           </el-col>
           <el-col :span="8">
             <span>蜡烛单位价格</span>
-            <el-input v-model="bpCost" placeholder="目标等级"/>
+            <el-input v-model="bpCost" placeholder="蜡烛单位价格"/>
           </el-col>
         </el-row>
         <p>需要的蜡烛</p>
