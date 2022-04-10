@@ -23,10 +23,10 @@
             <el-input v-model="bpCost" placeholder="蜡烛单位价格"/>
           </el-col>
         </el-row>
-        <p>需要的蜡烛</p>
-        <p>{{ calculateToken }}</p>
-        <p>推荐价格</p>
-        <p>{{ calculateCost }}</p>
+        <h3>需要的蜡烛</h3>
+        <p class="number">{{ calculateToken }} 蜡烛</p>
+        <h3>推荐价格</h3>
+        <p class="number">{{ calculateCost }} 元</p>
       </el-card>
     </el-row>
   </div>
@@ -1125,5 +1125,10 @@ export default class BpCalc extends Vue {
 <style>
 .el-row {
   margin-bottom: 20px;
+}
+
+.number {
+  font-size: 2em;
+  color: #397f4b;
 }
 </style>
